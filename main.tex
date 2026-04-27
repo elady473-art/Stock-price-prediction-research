@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{A GAN-Enhanced Deep Learning Framework for Improving Stock Price Prediction Accuracy Using NASDAQ Financial Time-Series Data}
+\author{Emebet Tn \\ Hawassa University}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Stock price prediction is highly challenging due to volatility, noise, and nonlinear patterns in financial markets. Traditional statistical models and deep learning approaches such as LSTM often fail under unstable conditions. This study proposes a hybrid GAN-LSTM framework where GAN-generated synthetic data enhances training. The model is evaluated using MAE, RMSE, and R\textsuperscript{2}, and compared with ARIMA and standard LSTM.
+\end{abstract}
+
+\section{Introduction}
+Stock markets play a major role in the global economy. However, predicting stock prices is extremely difficult due to market volatility and noise. Traditional statistical models fail to capture nonlinear patterns, while deep learning models such as LSTM still struggle during unstable periods \cite{hu2021}.
+
+\section{Problem Statement}
+Stock price prediction models are expected to handle volatility, noise, and nonlinear patterns. However, NASDAQ stocks are highly volatile and non-stationary, making prediction unreliable. Existing models such as ARIMA and LSTM often fail under sudden market changes.
+
+\section{Objectives}
+\subsection{General Objective}
+To develop a hybrid GAN-LSTM model that improves prediction accuracy.
+
+\subsection{Specific Objectives}
+\begin{itemize}
+\item Build GAN-LSTM model
+\item Generate synthetic data using GAN
+\item Compare with ARIMA and LSTM
+\item Evaluate using MAE, RMSE, R\textsuperscript{2}
+\end{itemize}
+
+\section{Literature Review}
+Recent studies show deep learning models outperform traditional methods but still struggle with noisy data. GAN-based approaches improve data quality and reduce overfitting \cite{kumar2022}. However, training instability remains a major issue.
+
+\section{Methodology}
+\subsection{Data}
+NASDAQ data (2015–2025) using OHLCV features.
+
+\subsection{Model}
+GAN generates synthetic data, which is combined with real data to train LSTM.
+
+\subsection{Evaluation}
+Metrics used: MAE, RMSE, R\textsuperscript{2}.
+
+\section{Scope and Limitations}
+The study focuses on NASDAQ stocks and does not include external data such as news or sentiment.
+
+\section{Ethics}
+This study uses public data and avoids privacy issues. Bias is reduced using diverse datasets.
+
+\section{Conclusion}
+The proposed GAN-LSTM model is expected to improve prediction accuracy and stability compared to traditional approaches.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+Deep learning models improve prediction accuracy \cite{mukherjee2023}.
